@@ -1,0 +1,174 @@
+
+/*Reminder * = select all */
+
+* {
+	/*changes font color to black*/
+	color: #000;
+}
+/*navigation sction*/
+/*have to start with this image as its taking up whey too much space*/
+.profile-img {
+	border-radius: 25px; 
+	/*rounds out the edges of the photo*/
+	height: 32px;
+	/*shrinks the photo to 32px but it also forces the previous line to make the photo a circle*/
+	width: 32px;
+	/*shrinks the width to 32px but no visual change */
+	position: relative;
+	/*makes it position more fluid depending on whats going on, on the page*/
+	top: 5px;
+	}
+.top-navigation {
+	/*aligns these links to the right*/
+	float:right;
+	/*confirms the margin & px*/
+	margin-right: 25px;
+	} 
+.top-navigation li{
+	/*remove bullet points*/
+	list-style: none;
+	/*letting us put these items inline*/
+	display: inline-block;
+	/*this will put thwm in the same row*/
+	text-align: right;
+	/*spacing out the padding so they are not touching */
+	padding: 5px 10px 0 0;
+	vertical-align: bottom;
+	margin: 5px 5px 0 0;
+	/*smaller font */
+	font-size: 13px;
+	}
+	
+/*update icons */
+.fa {
+	font-size: 20px;
+	vertical-align: top;
+	opacity: .7;
+	cursor: default;
+	}
+.fa:hover {
+	opacity: 1.0;
+	}
+.share-button {
+	/*makes the background grey*/
+	background-color: #f2f2f2;
+	/*dictates the padding on ttop and bottom vs right and left using the shortcut*/
+	padding:7px 15px;
+	/*changes cursor image*/
+	cursor: default;
+	position: relative;
+    top: -3px;
+	}
+.share-button:hover {
+	/*changing the color of the link*/
+	background-color: #E1E1E1;
+	}
+
+/*middle sction*/
+.search-box {
+	/*this will push the footer list to the top, overlapping*/
+	position: absolute;
+	/* sets the margin */
+	margin-top:75px;
+	width:100%;
+	}
+.search-box img { 
+	/*elements with a class of search-box; then find any img tags inside*/
+	/*updates padding on the top, right, bttm, then left */
+	padding:142px 0 24px 0;
+	display: block;
+	/*allows the google logo to move to the middle of the page */
+	margin:0 auto;
+	align-content: center;
+	}
+.search-box input {
+	/*moves input box overand extends it to width expressed below*/
+	width: 600px;
+	margin: 0 auto;
+	/*makes padddng thicker */
+	padding: 5px;
+	/*thickens border and changes the coloe */
+	border: 1px solid #d9d9d9;
+	font-size: 16px;
+	/*increases border and rounded corners */
+	border-radius: 5px;
+	/*gives it its own line*/
+	display: block;
+	}
+.search-box input:focus {
+	border-color: #f5f5f5;
+	}
+.search-buttons  {
+	/*any class search button*/
+	text-align: center;
+	padding-left: 0;
+	/*moves the buttons to center to input box*/
+	}
+.search-buttons button{
+	  background-color: #f5f5f5;
+	  /*gives a shadow ro the box */
+	  border: 1px solid rgba(0, 0, 0, 0.1);
+	  border-radius: 2px;
+	  color: #666;
+	  /*font size, then weight */
+	  font-size: 14px;
+   	  font-weight: bold;
+      line-height: 27px;
+      margin: 17px 6px;
+      padding: 0 12px;
+      display: inline-block;
+      cursor: pointer;
+  	  }	
+.search-button button:hover{
+	background-color:#f8f8f8;
+	border: 1px solid #c6c6c6;
+    box-shadow:0 1px 1px rgba(0,0,0,0.1);
+    color:#333;
+	}
+
+/*footer sction*/
+
+.bottom-site-links { /*lements with a class of button-site-links */
+	bottom: 0 !important;
+	position: absolute;
+	/*moves the li to the bottom of the page*/
+	width:100%;
+	background-color: #f2f2f2;
+	/*creates bg color for the bottom to differentiate between the main body and footer */
+	border-top: 1px solid #e4e4e4; 
+    }
+.left-site-links, .right-site-links {
+	/*and select any elements with a class of left-site-link & right-site-links*/
+ 	margin: 0;
+	}
+.left-site-links {
+	float:left;
+	/*positions the links on the left*/
+	padding-left:20px;
+	}
+.right-site-links {
+	float:right;
+	/*positions the links on the right*/
+	padding-right:10px;
+	}
+.left-site-links li, .right-site-links li {
+	list-style: none;
+	/*removes bullet points*/
+	display: inline;
+	/*tells webpage how to handle the display */
+	line-height: 40px;
+	}
+.right-site-links li a:first-child {
+	/*allows for spacing so the links are not on top of each other */
+	padding-right:8px;
+	}
+.left-site-links li:nth-child(2),
+.left-site-links li:nth-child(3) {
+	margin-left:7px;
+	}
+.left-site-links li a,.right-site-links li a {
+	color: #666;
+    margin: 2px 10px 0;
+    letter-spacing: 0.1px;
+    font-size: 14px;
+	}
